@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Operators</title>
+</head>
+<body>
+    <script>
+
+//Switch Statements
+function classifyValue (value) {
+    var response;
+    switch (value) {
+        case 1:
+            response = "Alpha";
+            break;
+
+        case 2:
+            response = "Beta";
+            break;
+        
+        case 3:
+            response = "Gamma";
+            break;
+
+        case 4:
+            response = "Delta";
+            break;
+
+    }
+    return response;
+}
+console.log(classifyValue(5));
+
+//Switch Statement with string characters
+var product = "Burger";
+
+switch (product) {
+    case "Pizza":
+        console.log("The pizza goes up to $10.55");
+        break;
+
+    case "Burger":
+        console.log("The burger goes up to $6.78");
+        break;
+
+    case "Ice-cream":
+        console.log("The icecream goes up to $2.80")    
+        break;
+}
+
+console.log("Righ after the Switch statement")
+
+
+//Switch statement with pre-determine options
+function selectLanguage (value){
+    var language;
+    switch (value){
+        case 1:
+        language = "Spanish";
+        break;
+    
+        case 2:
+        language = "Italian";
+        break;
+
+        case 3:    
+        language = "French";
+        break;
+
+        default:
+        language = "English"
+        break;
+    }
+    return language;
+}
+
+console.log(selectLanguage())
+
+
+//Switch statement using multiple cases
+function classifyVolume (value){
+    var volume;
+
+    switch (value){
+        case 1:
+        volume = "Low";
+        break;
+
+        case 2:
+        case 3:
+        volume = "Intermedium";
+        break;
+
+        case 4:
+        case 5:
+        case 6:
+        volume = "Hight"
+        break;
+
+    }
+    return volume;
+
+}
+console.log(classifyVolume(5));
+
+//Replace "if...else" by "switch" statement:
+
+function selectionarIdioma (value) {
+    var idioma;
+
+    switch (value){
+        case 1:
+        idioma = "Spanish";
+        break;
+
+        case 2:
+        idioma = "French";
+        break;
+
+        case 3:
+        idioma = "Italian"
+        break;
+
+        default:
+        idioma = "English";
+        break;
+
+    }
+
+    return idioma;
+    }
+    console.log(selectionarIdioma(5));
+    
+
+//Returning Booleans values
+
+
+
+
+    </script>
+    
+</body>
+</html>
